@@ -1,12 +1,296 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { motion } from "framer-motion";
+import { Github, ExternalLink, Code, Globe } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+
+const applications = [
+  {
+    id: 1,
+    name: "E-Commerce Dashboard",
+    description: "A comprehensive dashboard for managing online stores with real-time analytics and inventory management.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    vercelUrl: "https://ecommerce-dashboard.vercel.app",
+    githubUrl: "https://github.com/username/ecommerce-dashboard",
+    tags: ["React", "TypeScript", "Tailwind CSS"]
+  },
+  {
+    id: 2,
+    name: "Task Management App",
+    description: "A modern task management application with drag-and-drop functionality and team collaboration features.",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
+    vercelUrl: "https://task-manager-pro.vercel.app",
+    githubUrl: "https://github.com/username/task-manager",
+    tags: ["React", "Node.js", "MongoDB"]
+  },
+  {
+    id: 3,
+    name: "Weather Forecast App",
+    description: "Beautiful weather application with detailed forecasts, interactive maps, and location-based insights.",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
+    vercelUrl: "https://weather-app-pro.vercel.app",
+    githubUrl: "https://github.com/username/weather-app",
+    tags: ["React", "API Integration", "CSS3"]
+  },
+  {
+    id: 4,
+    name: "Social Media Analytics",
+    description: "Advanced analytics platform for social media performance tracking with beautiful data visualizations.",
+    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
+    vercelUrl: "https://social-analytics.vercel.app",
+    githubUrl: "https://github.com/username/social-analytics",
+    tags: ["React", "Chart.js", "REST API"]
+  },
+  {
+    id: 5,
+    name: "Portfolio Builder",
+    description: "A dynamic portfolio builder that allows users to create stunning portfolios without coding knowledge.",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop",
+    vercelUrl: "https://portfolio-builder.vercel.app",
+    githubUrl: "https://github.com/username/portfolio-builder",
+    tags: ["React", "Drag & Drop", "Firebase"]
+  },
+  {
+    id: 6,
+    name: "Crypto Tracker",
+    description: "Real-time cryptocurrency tracking application with portfolio management and price alerts.",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+    vercelUrl: "https://crypto-tracker-pro.vercel.app",
+    githubUrl: "https://github.com/username/crypto-tracker",
+    tags: ["React", "WebSocket", "Chart.js"]
+  }
+];
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5
+    }
+  }
+};
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <motion.section 
+        className="relative py-20 px-6 text-center bg-gradient-to-br from-background via-secondary/20 to-background"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/50 rounded-full text-sm text-muted-foreground mb-6"
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            <Code className="w-4 h-4" />
+            Full Stack Developer
+          </motion.div>
+          
+          <motion.h1 
+            className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+          >
+            My Applications
+          </motion.h1>
+          
+          <motion.p 
+            className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
+          >
+            A curated collection of modern web applications built with cutting-edge technologies and deployed on Vercel.
+          </motion.p>
+          
+          <motion.div
+            className="flex items-center justify-center gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+          >
+            <Button size="lg" className="gap-2">
+              <Globe className="w-4 h-4" />
+              View Projects
+            </Button>
+            <Button variant="outline" size="lg" className="gap-2">
+              <Github className="w-4 h-4" />
+              GitHub Profile
+            </Button>
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* Applications Grid */}
+      <section className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Explore my latest applications, each crafted with attention to detail and modern development practices.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            {applications.map((app) => (
+              <motion.div
+                key={app.id}
+                variants={itemVariants}
+                whileHover={{ y: -8 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Card className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 bg-card/50 backdrop-blur">
+                  <div className="relative overflow-hidden">
+                    <motion.img
+                      src={app.image}
+                      alt={app.name}
+                      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                      whileHover={{ scale: 1.05 }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    
+                    <div className="absolute top-4 right-4 flex gap-2">
+                      <motion.div
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <Button
+                          size="sm"
+                          variant="secondary"
+                          className="h-8 w-8 p-0 bg-white/20 backdrop-blur border-0 hover:bg-white/30"
+                          asChild
+                        >
+                          <a href={app.vercelUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="w-3 h-3" />
+                          </a>
+                        </Button>
+                      </motion.div>
+                      
+                      <motion.div
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <Button
+                          size="sm"
+                          variant="secondary"
+                          className="h-8 w-8 p-0 bg-white/20 backdrop-blur border-0 hover:bg-white/30"
+                          asChild
+                        >
+                          <a href={app.githubUrl} target="_blank" rel="noopener noreferrer">
+                            <Github className="w-3 h-3" />
+                          </a>
+                        </Button>
+                      </motion.div>
+                    </div>
+                  </div>
+                  
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-lg group-hover:text-primary transition-colors">
+                      {app.name}
+                    </CardTitle>
+                    <CardDescription className="text-sm leading-relaxed">
+                      {app.description}
+                    </CardDescription>
+                  </CardHeader>
+                  
+                  <CardContent className="pt-0">
+                    <div className="flex flex-wrap gap-1.5 mb-4">
+                      {app.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="px-2 py-1 text-xs bg-secondary/50 text-muted-foreground rounded-full"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    
+                    <div className="flex gap-2">
+                      <Button 
+                        size="sm" 
+                        className="flex-1 gap-1.5" 
+                        asChild
+                      >
+                        <a href={app.vercelUrl} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="w-3 h-3" />
+                          Live Demo
+                        </a>
+                      </Button>
+                      
+                      <Button 
+                        size="sm" 
+                        variant="outline" 
+                        className="flex-1 gap-1.5" 
+                        asChild
+                      >
+                        <a href={app.githubUrl} target="_blank" rel="noopener noreferrer">
+                          <Github className="w-3 h-3" />
+                          Source
+                        </a>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <motion.footer 
+        className="py-12 px-6 border-t bg-secondary/20"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-muted-foreground mb-4">
+            Built with React, TypeScript, Tailwind CSS, and Framer Motion
+          </p>
+          <div className="flex justify-center gap-4">
+            <Button variant="ghost" size="sm" className="gap-2">
+              <Github className="w-4 h-4" />
+              GitHub
+            </Button>
+            <Button variant="ghost" size="sm" className="gap-2">
+              <ExternalLink className="w-4 h-4" />
+              Portfolio
+            </Button>
+          </div>
+        </div>
+      </motion.footer>
     </div>
   );
 };
