@@ -131,10 +131,12 @@ const Index = () => {
               <Globe className="w-4 h-4" />
               View Projects
             </Button>
-            <Button variant="outline" size="lg" className="gap-2">
-              <Github className="w-4 h-4" />
-              GitHub Profile
-            </Button>
+            <a href="https://github.com/mapm90" target="_blank" rel="noopener noreferrer">
+  <Button variant="outline" size="lg" className="gap-2">
+    <Github className="w-4 h-4" />
+    GitHub Profile
+  </Button>
+</a>
           </motion.div>
         </div>
       </motion.section>
