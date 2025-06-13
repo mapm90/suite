@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import preview from '../medias/previw.png';
 import previewdc from '../medias/previw data calc.png';
+import previewcalc from '../medias/previw calc.png';
 const applications = [
   
   {
@@ -27,9 +28,9 @@ const applications = [
   },
   {
     id: 3,
-    name: "Weather Forecast App",
+    name: "Scientific Calculator",
     description: "Beautiful weather application with detailed forecasts, interactive maps, and location-based insights.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
+    image: previewcalc,
     vercelUrl: "https://weather-app-pro.vercel.app",
     githubUrl: "https://github.com/username/weather-app",
     tags: ["React", "API Integration", "CSS3"]
