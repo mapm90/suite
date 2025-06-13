@@ -123,16 +123,12 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            <Button size="lg" className="gap-2">
-              <Globe className="w-4 h-4" />
-              View Projects
-            </Button>
             <a href="https://github.com/mapm90/" target="_blank" rel="noopener noreferrer">
-  <Button variant="outline" size="lg" className="gap-2">
-    <Github className="w-4 h-4" />
-    GitHub Profile
-  </Button>
-</a>
+                 <Button  size="lg" className="gap-2">
+                    <Github className="w-4 h-4" />
+                           GitHub Profile
+                 </Button>
+                      </a>
           </motion.div>
         </div>
       </motion.section>
@@ -141,13 +137,13 @@ const Index = () => {
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+                  className="text-center mb-16"
+                     initial={{ opacity: 0, y: 20 }}
+                       whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+            >
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Explore my latest applications, each crafted with attention to detail and modern development practices.
             </p>
