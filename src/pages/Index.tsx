@@ -4,6 +4,7 @@ import { Github, ExternalLink, Code, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import preview from '../medias/previw.png';
+import previewdc from '../medias/previw data calc.png';
 const applications = [
   
   {
@@ -19,9 +20,9 @@ const applications = [
     id: 2,
     name: "Task Management App",
     description: "A modern task management application with drag-and-drop functionality and team collaboration features.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
-    vercelUrl: "https://task-manager-pro.vercel.app",
-    githubUrl: "https://github.com/username/task-manager",
+    image: previewdc,
+    vercelUrl: "https://data-time.vercel.app/",
+    githubUrl: "https://github.com/mapm90/data_time",
     tags: ["React", "Node.js", "MongoDB"]
   },
   {
