@@ -18,7 +18,7 @@ const applications = [
   },
   {
     id: 2,
-    name: "Task Management App",
+    name: "Vero ",
     description: "Quickly calculate the time elapsed between two dates, showing the difference in years, months, days, and more.",
     image: previewdc,
     vercelUrl: "https://data-time.vercel.app/",
