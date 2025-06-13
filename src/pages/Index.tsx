@@ -29,7 +29,7 @@ const applications = [
   {
     id: 3,
     name: "Scientific Calculator",
-    description: "Beautiful weather application with detailed forecasts, interactive maps, and location-based insights.",
+    description: "A versatile calculator for accurate mathematical operations, offering a smooth and intuitive user experience.",
     image: previewcalc,
     vercelUrl: "https://weather-app-pro.vercel.app",
     githubUrl: "https://github.com/username/weather-app",
