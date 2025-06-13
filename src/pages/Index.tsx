@@ -15,7 +15,7 @@ const applications = [
     image: preview,
     vercelUrl: "https://geo-clima.vercel.app/",
     githubUrl: "https://github.com/mapm90/geo_clima",
-    tags: ["React", "TypeScript", "Tailwind CSS"]
+    tags: ["React", "TypeScript", "API Integration", "Tailwind CSS"]
   },
   {
     id: 2,
@@ -24,16 +24,16 @@ const applications = [
     image: previewdc,
     vercelUrl: "https://data-time.vercel.app/",
     githubUrl: "https://github.com/mapm90/data_time",
-    tags: ["React", "Node.js", "MongoDB"]
+    tags: ["React", "TypeScript", "Tailwind CSS"]
   },
   {
     id: 3,
     name: "Scientific Calculator",
     description: "A versatile calculator for accurate mathematical operations, offering a smooth and intuitive user experience.",
     image: previewcalc,
-    vercelUrl: "https://weather-app-pro.vercel.app",
-    githubUrl: "https://github.com/username/weather-app",
-    tags: ["React", "API Integration", "CSS3"]
+    vercelUrl: "https://calculator-pi-neon-47.vercel.app/",
+    githubUrl: "https://github.com/mapm90/calculator",
+    tags: ["React","TypeScript", "Tailwind CSS3"]
   },
   {
     id: 4,
