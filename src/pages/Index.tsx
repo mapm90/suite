@@ -24,7 +24,7 @@ const applications = [
     name: "Elapsed time between two dates",
     description: "Quickly calculate the time elapsed between two dates, showing the difference in years, months, days, and more.",
     image: previewdc,
-    vercelUrl: "https://data-time.vercel.app/",
+    vercelUrl: "https://databetwen.vercel.app/",
     githubUrl: "https://github.com/mapm90/data_time",
     tags: ["React", "TypeScript", "Tailwind CSS"]
   },
@@ -33,7 +33,7 @@ const applications = [
     name: "Scientific Calculator",
     description: "A versatile calculator for accurate mathematical operations, offering a smooth and intuitive user experience.",
     image: previewcalc,
-    vercelUrl: "https://calculator-pi-neon-47.vercel.app/",
+    vercelUrl: "https://supcalculator.vercel.app/",
     githubUrl: "https://github.com/mapm90/calculator",
     tags: ["React","TypeScript", "Tailwind CSS3"]
   },
@@ -51,7 +51,7 @@ const applications = [
     name: "Body Mass Index Calculator (BMI Calculator)",
     description: "Quickly calculate your BMI to check your weight category and track your fitness.",
     image: previewcalculadoraIMC,
-    vercelUrl: "https://bmicalculator-pied.vercel.app/",
+    vercelUrl: "https://bmicalculators.vercel.app/",
     githubUrl: "https://github.com/mapm90/bmicalculator",
     tags: ["React","TypeScript", "Tailwind CSS3"]
   }
