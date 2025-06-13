@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import preview from '../medias/previw.png';
 import previewdc from '../medias/previw data calc.png';
 import previewcalc from '../medias/previw calc.png';
+import previewcalorias from '../medias/previw calorias.png';
 const applications = [
   
   {
@@ -37,12 +38,12 @@ const applications = [
   },
   {
     id: 4,
-    name: "Social Media Analytics",
-    description: "Advanced analytics platform for social media performance tracking with beautiful data visualizations.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
-    vercelUrl: "https://social-analytics.vercel.app",
-    githubUrl: "https://github.com/username/social-analytics",
-    tags: ["React", "Chart.js", "REST API"]
+    name: "Calorie Calculator",
+    description: "This Calorie Calculator helps you estimate the number of calories burned or required based on your activity and goals.",
+    image: previewcalorias,
+    vercelUrl: "https://caloriesreduct.vercel.app/",
+    githubUrl: "https://github.com/mapm90/caloriesreduct",
+    tags: ["React","TypeScript", "Tailwind CSS3"]
   },
   {
     id: 5,
