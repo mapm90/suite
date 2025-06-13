@@ -3,15 +3,16 @@ import { motion } from "framer-motion";
 import { Github, ExternalLink, Code, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-
+import preview from '../medias/previw.png';
 const applications = [
+  
   {
     id: 1,
-    name: "E-Commerce Dashboard",
-    description: "A comprehensive dashboard for managing online stores with real-time analytics and inventory management.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    vercelUrl: "https://ecommerce-dashboard.vercel.app",
-    githubUrl: "https://github.com/username/ecommerce-dashboard",
+    name: "Clima Mundial",
+    description: "Stay updated with real-time weather data. Check temperature, humidity, wind, forecasts, easily. Your complete weather companion, anytime, anywhere..",
+    image: preview,
+    vercelUrl: "https://geo-clima.vercel.app/",
+    githubUrl: "https://github.com/mapm90/geo_clima",
     tags: ["React", "TypeScript", "Tailwind CSS"]
   },
   {
@@ -131,7 +132,7 @@ const Index = () => {
               <Globe className="w-4 h-4" />
               View Projects
             </Button>
-            <a href="https://github.com/mapm90" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/mapm90/" target="_blank" rel="noopener noreferrer">
   <Button variant="outline" size="lg" className="gap-2">
     <Github className="w-4 h-4" />
     GitHub Profile
