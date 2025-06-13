@@ -19,7 +19,7 @@ const applications = [
   {
     id: 2,
     name: "Task Management App",
-    description: "A modern task management application with drag-and-drop functionality and team collaboration features.",
+    description: "Quickly calculate the time elapsed between two dates, showing the difference in years, months, days, and more.",
     image: previewdc,
     vercelUrl: "https://data-time.vercel.app/",
     githubUrl: "https://github.com/mapm90/data_time",
