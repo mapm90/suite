@@ -7,6 +7,7 @@ import preview from '../medias/previw.png';
 import previewdc from '../medias/previw data calc.png';
 import previewcalc from '../medias/previw calc.png';
 import previewcalorias from '../medias/previw calorias.png';
+import previewcalculadoraIMC from '../medias/previw calculadora IMC.png';
 const applications = [
   
   {
@@ -47,21 +48,12 @@ const applications = [
   },
   {
     id: 5,
-    name: "Portfolio Builder",
-    description: "A dynamic portfolio builder that allows users to create stunning portfolios without coding knowledge.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop",
-    vercelUrl: "https://portfolio-builder.vercel.app",
-    githubUrl: "https://github.com/username/portfolio-builder",
-    tags: ["React", "Drag & Drop", "Firebase"]
-  },
-  {
-    id: 6,
-    name: "Crypto Tracker",
-    description: "Real-time cryptocurrency tracking application with portfolio management and price alerts.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
-    vercelUrl: "https://crypto-tracker-pro.vercel.app",
-    githubUrl: "https://github.com/username/crypto-tracker",
-    tags: ["React", "WebSocket", "Chart.js"]
+    name: "Body Mass Index Calculator (BMI Calculator)",
+    description: "Quickly calculate your BMI to check your weight category and track your fitness.",
+    image: previewcalculadoraIMC,
+    vercelUrl: "https://bmicalculator-pied.vercel.app/",
+    githubUrl: "https://github.com/mapm90/bmicalculator",
+    tags: ["React","TypeScript", "Tailwind CSS3"]
   }
 ];
 
