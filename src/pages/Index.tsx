@@ -8,17 +8,18 @@ import previewdc from '../medias/previw data calc.png';
 import previewcalc from '../medias/previw calc.png';
 import previewcalorias from '../medias/previw calorias.png';
 import previewcalculadoraIMC from '../medias/previw calculadora IMC.png';
+import unidos from '../medias/unidos.png';
 const applications = [
-  
-  {
+{
     id: 1,
-    name: "Clima Mundial",
-    description: "Stay updated with real-time weather data. Check temperature, humidity, wind, forecasts, easily. Your complete weather companion, anytime, anywhere..",
-    image: preview,
-    vercelUrl: "https://geo-clima.vercel.app/",
-    githubUrl: "https://github.com/mapm90/geo_clima",
-    tags: ["React", "TypeScript", "API Integration", "Tailwind CSS"]
-  },
+    name: "SMS adapt",
+    description: "A simple yet innovative SMS management application that transforms text by applying customized linguistic rules to reduce characters without affecting readability or comprehension. Designed for environments where efficiency is essential, it integrates artificial intelligence principles to adapt to continuous use.",
+    image: unidos,
+    vercelUrl: "https://bmicalculators.vercel.app/",
+    githubUrl: "https://github.com/mapm90/bmicalculator",
+    tags: ["Kotlin", "Jetpack Compose"]
+  }  
+  ,
   {
     id: 2,
     name: "Elapsed time between two dates",
@@ -54,6 +55,15 @@ const applications = [
     vercelUrl: "https://bmicalculators.vercel.app/",
     githubUrl: "https://github.com/mapm90/bmicalculator",
     tags: ["React","TypeScript", "Tailwind CSS3"]
+  },
+  {
+    id: 6,
+    name: "Clima Mundial",
+    description: "Stay updated with real-time weather data. Check temperature, humidity, wind, forecasts, easily. Your complete weather companion, anytime, anywhere..",
+    image: preview,
+    vercelUrl: "https://geo-clima.vercel.app/",
+    githubUrl: "https://github.com/mapm90/geo_clima",
+    tags: ["React", "TypeScript", "API Integration", "Tailwind CSS"]
   }
 ];
 
