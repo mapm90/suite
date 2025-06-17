@@ -16,7 +16,7 @@ const applications = [
     description: "A simple yet innovative SMS management application that transforms text by applying customized linguistic rules to reduce characters without affecting readability or comprehension. Designed for environments where efficiency is essential, it integrates artificial intelligence principles to adapt to continuous use.",
     image: unidos,
     vercelUrl: "https://smscard.vercel.app/",
-    githubUrl: "https://github.com/mapm90/bmicalculator",
+    githubUrl: "https://github.com/mapm90/sms_shorter",
     tags: ["Kotlin", "Jetpack Compose"]
   }  
   ,
