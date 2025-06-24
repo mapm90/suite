@@ -8,6 +8,8 @@ import previewcalc from '../medias/previw calc.png';
 import previewcalorias from '../medias/previw calorias.png';
 import previewcalculadoraIMC from '../medias/previw calculadora IMC.png';
 import unidos from '../medias/unidos.png';
+import playmusic from '../medias/playmusic.png';
+
 
 const applications = [
   // ... (igual que antes)
@@ -63,6 +65,15 @@ const applications = [
     image: preview,
     vercelUrl: "https://geo-clima.vercel.app/",
     githubUrl: "https://github.com/mapm90/geo_clima",
+    tags: ["React", "TypeScript", "API Integration", "Tailwind CSS"]
+  },
+  {
+    id: 7,
+    name: "Music Player",
+    description: "A modern music player application that allows you to search, play, and manage your favorite songs with a sleek interface and smooth performance.",
+    image: playmusic, // Reemplazar con la imagen del reproductor de música     
+    vercelUrl: "https://playamusic.vercel.app/",
+    githubUrl: "https://github.com/mapm90/playmusic",
     tags: ["React", "TypeScript", "API Integration", "Tailwind CSS"]
   }
 ];
@@ -130,7 +141,7 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8, type: "spring" }}
         >
-          Discover a suite of modern, high-end web applications crafted with precision, innovation, and a passion for technology.
+          Discover a suite of modern, high-end web and android applications crafted with precision, innovation, and a passion for technology.
         </motion.p>
 
         <motion.div
