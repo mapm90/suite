@@ -16,7 +16,7 @@ const applications = [
   {
     id: 1,
     name: "SMS adapt",
-    description: "A simple yet innovative android SMS management application that transforms text by applying customized linguistic rules to reduce characters without affecting readability or comprehension. Designed for environments where efficiency is essential, it integrates artificial intelligence principles to adapt to continuous use.",
+    description: "An innovative Android SMS app that shortens text using custom rules to save characters while keeping it readable, blending AI principles for adaptive and efficient messaging.",
     image: unidos,
     vercelUrl: "https://smscard.vercel.app/",
     githubUrl: "https://github.com/mapm90/smacard",
