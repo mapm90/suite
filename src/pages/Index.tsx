@@ -1,81 +1,112 @@
 import { motion } from "framer-motion";
 import { Github, ExternalLink, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import preview from '../medias/previw.png';
-import previewdc from '../medias/previw data calc.png';
-import previewcalc from '../medias/previw calc.png';
-import previewcalorias from '../medias/previw calorias.png';
-import previewcalculadoraIMC from '../medias/previw calculadora IMC.png';
-import unidos from '../medias/unidos.png';
-import playmusic from '../medias/playmusic.png';
-
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import preview from "../medias/previw.png";
+import previewdc from "../medias/previw data calc.png";
+import previewcalc from "../medias/previw calc.png";
+import previewcalorias from "../medias/previw calorias.png";
+import previewcalculadoraIMC from "../medias/previw calculadora IMC.png";
+import unidos from "../medias/unidos.png";
+import playmusic from "../medias/playmusic.png";
+import vdmm from "../medias/vdmm-services.png";
 
 const applications = [
   // ... (igual que antes)
+
   {
     id: 1,
-    name: "SMS adapt",
-    description: "An innovative Android SMS app that shortens text using custom rules to save characters while keeping it readable, blending AI principles for adaptive and efficient messaging.",
-    image: unidos,
-    vercelUrl: "https://smscard.vercel.app/",
-    githubUrl: "https://github.com/mapm90/smacard",
-    tags: ["Kotlin", "Jetpack Compose"]
+    name: "VDMM Services",
+    description:
+      "A responsive business website built to present technology services, highlight expertise, and guide users toward contact and service requests.",
+    image: vdmm,
+    vercelUrl: "https://vdmm-services.vercel.app/",
+    githubUrl: "https://github.com/mapm90/vsolutions-frontend",
+    tags: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "HTML",
+      "API Integration",
+    ],
   },
   {
     id: 2,
-    name: "Elapsed time between two dates",
-    description: "Quickly calculate the time elapsed between two dates, showing the difference in years, months, days, and more.",
-    image: previewdc,
-    vercelUrl: "https://databetwen.vercel.app/",
-    githubUrl: "https://github.com/mapm90/data_time",
-    tags: ["React", "TypeScript", "Tailwind CSS"]
+    name: "SMS adapt",
+    description:
+      "An innovative Android SMS app that shortens text using custom rules to save characters while keeping it readable, blending AI principles for adaptive and efficient messaging.",
+    image: unidos,
+    vercelUrl: "https://smscard.vercel.app/",
+    githubUrl: "https://github.com/mapm90/smacard",
+    tags: ["Kotlin", "Jetpack Compose"],
   },
   {
     id: 3,
-    name: "Scientific Calculator",
-    description: "A versatile calculator for accurate mathematical operations, offering a smooth and intuitive user experience.",
-    image: previewcalc,
-    vercelUrl: "https://supcalculator.vercel.app/",
-    githubUrl: "https://github.com/mapm90/calculator",
-    tags: ["React","TypeScript", "Tailwind CSS3"]
+    name: "Elapsed time between two dates",
+    description:
+      "Quickly calculate the time elapsed between two dates, showing the difference in years, months, days, and more.",
+    image: previewdc,
+    vercelUrl: "https://databetwen.vercel.app/",
+    githubUrl: "https://github.com/mapm90/data_time",
+    tags: ["React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML"],
   },
   {
     id: 4,
-    name: "Calorie Calculator",
-    description: "This Calorie Calculator helps you estimate the number of calories burned or required based on your activity and goals.",
-    image: previewcalorias,
-    vercelUrl: "https://caloriesreduct.vercel.app/",
-    githubUrl: "https://github.com/mapm90/caloriesreduct",
-    tags: ["React","TypeScript", "Tailwind CSS3"]
+    name: "Scientific Calculator",
+    description:
+      "A versatile calculator for accurate mathematical operations, offering a smooth and intuitive user experience.",
+    image: previewcalc,
+    vercelUrl: "https://supcalculator.vercel.app/",
+    githubUrl: "https://github.com/mapm90/calculator",
+    tags: ["React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML"],
   },
   {
     id: 5,
-    name: "Body Mass Index Calculator (BMI Calculator)",
-    description: "Quickly calculate your BMI to check your weight category and track your fitness.",
-    image: previewcalculadoraIMC,
-    vercelUrl: "https://bmicalculators.vercel.app/",
-    githubUrl: "https://github.com/mapm90/bmicalculator",
-    tags: ["React","TypeScript", "Tailwind CSS3"]
+    name: "Calorie Calculator",
+    description:
+      "This Calorie Calculator helps you estimate the number of calories burned or required based on your activity and goals.",
+    image: previewcalorias,
+    vercelUrl: "https://caloriesreduct.vercel.app/",
+    githubUrl: "https://github.com/mapm90/caloriesreduct",
+    tags: ["React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML"],
   },
   {
     id: 6,
-    name: "Clima Mundial",
-    description: "Stay updated with real-time weather data. Check temperature, humidity, wind, forecasts, easily. Your complete weather companion, anytime, anywhere..",
-    image: preview,
-    vercelUrl: "https://geo-clima.vercel.app/",
-    githubUrl: "https://github.com/mapm90/geo_clima",
-    tags: ["React", "TypeScript", "API Integration", "Tailwind CSS"]
+    name: "Body Mass Index Calculator (BMI Calculator)",
+    description:
+      "Quickly calculate your BMI to check your weight category and track your fitness.",
+    image: previewcalculadoraIMC,
+    vercelUrl: "https://bmicalculators.vercel.app/",
+    githubUrl: "https://github.com/mapm90/bmicalculator",
+    tags: ["React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML"],
   },
   {
     id: 7,
+    name: "Clima Mundial",
+    description:
+      "Stay updated with real-time weather data. Check temperature, humidity, wind, forecasts, easily. Your complete weather companion, anytime, anywhere..",
+    image: preview,
+    vercelUrl: "https://geo-clima.vercel.app/",
+    githubUrl: "https://github.com/mapm90/geo_clima",
+    tags: ["React", "TypeScript", "API Integration", "Tailwind CSS"],
+  },
+  {
+    id: 8,
     name: "Music Player",
-    description: "A modern music player application that allows you to search, play, and manage your favorite songs with a sleek interface and smooth performance.",
-    image: playmusic, // Reemplazar con la imagen del reproductor de música     
+    description:
+      "A modern music player application that allows you to search, play, and manage your favorite songs with a sleek interface and smooth performance.",
+    image: playmusic, // Reemplazar con la imagen del reproductor de música
     vercelUrl: "https://playamusic.vercel.app/",
     githubUrl: "https://github.com/mapm90/playmusic",
-    tags: ["React", "TypeScript", "API Integration", "Tailwind CSS"]
-  }
+    tags: ["React", "TypeScript", "JavaScript", "Tailwind CSS"],
+  },
 ];
 
 const containerVariants = {
@@ -83,9 +114,9 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1
-    }
-  }
+      staggerChildren: 0.1,
+    },
+  },
 };
 
 const itemVariants = {
@@ -94,9 +125,9 @@ const itemVariants = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 0.5
-    }
-  }
+      duration: 0.5,
+    },
+  },
 };
 
 const Index = () => {
@@ -141,7 +172,8 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8, type: "spring" }}
         >
-          Discover a suite of modern, high-end web and android applications crafted with precision, innovation, and a passion for technology.
+          Discover a suite of modern, high-end web and android applications
+          crafted with precision, innovation, and a passion for technology.
         </motion.p>
 
         <motion.div
@@ -150,7 +182,11 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8, type: "spring" }}
         >
-          <a href="https://github.com/mapm90/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/mapm90/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button
               size="lg"
               className="gap-2 bg-gradient-to-r from-[#00c6ff] to-[#f7971e] text-white font-semibold shadow-xl hover:from-[#0072ff] hover:to-[#ffd200] transition-all duration-300 border-0"
@@ -172,9 +208,12 @@ const Index = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white drop-shadow-lg">Featured Projects</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white drop-shadow-lg">
+              Featured Projects
+            </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
-              Explore my latest applications, each crafted with attention to detail and modern development practices.
+              Explore my latest applications, each crafted with attention to
+              detail and modern development practices.
             </p>
           </motion.div>
 
@@ -213,7 +252,11 @@ const Index = () => {
                           className="h-8 w-8 p-0 bg-white/30 backdrop-blur border-0 hover:bg-white/40"
                           asChild
                         >
-                          <a href={app.vercelUrl} target="_blank" rel="noopener noreferrer">
+                          <a
+                            href={app.vercelUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <ExternalLink className="w-3 h-3 text-[#00c6ff]" />
                           </a>
                         </Button>
@@ -229,7 +272,11 @@ const Index = () => {
                           className="h-8 w-8 p-0 bg-white/30 backdrop-blur border-0 hover:bg-white/40"
                           asChild
                         >
-                          <a href={app.githubUrl} target="_blank" rel="noopener noreferrer">
+                          <a
+                            href={app.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <Github className="w-3 h-3 text-[#ffd200]" />
                           </a>
                         </Button>
@@ -264,23 +311,31 @@ const Index = () => {
                         className="flex-1 gap-1.5 bg-gradient-to-r from-[#00c6ff] to-[#ffd200] text-white font-semibold shadow hover:from-[#0072ff] hover:to-[#ffd200] border-0"
                         asChild
                       >
-                        <a href={app.vercelUrl} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={app.vercelUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <ExternalLink className="w-3 h-3" />
                           Demo
                         </a>
                       </Button>
 
-                        <Button
+                      <Button
                         size="sm"
                         variant="ghost"
                         className="flex-1 gap-1.5 bg-gradient-to-r from-[#232526]/80 to-[#00c6ff]/30 text-white font-semibold border-0 hover:from-[#ffd200]/70 hover:to-[#00c6ff]/80 hover:text-black transition-all duration-300"
                         asChild
+                      >
+                        <a
+                          href={app.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
-                        <a href={app.githubUrl} target="_blank" rel="noopener noreferrer">
                           <Github className="w-3 h-3" />
                           Source
                         </a>
-                        </Button>
+                      </Button>
                     </div>
                   </CardContent>
                 </Card>
