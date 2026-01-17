@@ -2,6 +2,8 @@ import { motion, type Easing } from "framer-motion";
 import { Code, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import perfil from "../medias/perfil.jpg";
+import SplashCursor from "./SplashCursor";
+
 import {
   SiReact,
   SiTypescript,
@@ -223,7 +225,7 @@ const HeroSection = () => {
           </motion.div>
         ))}
       </motion.div>
-
+      <SplashCursor />
       <motion.div
         className="flex items-center justify-center gap-6"
         initial={{ opacity: 0, y: 30 }}
