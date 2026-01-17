@@ -112,8 +112,8 @@ function calculateAge(birthYear: number, birthMonth: number): number {
   return age;
 }
 
-const age = calculateAge(1990, 11);
-const ageprof = calculateAge(2015, 6);
+const age = calculateAge(1990, 10);
+const ageprof = calculateAge(2015, 5);
 
 const HeroSection = () => {
   return (
