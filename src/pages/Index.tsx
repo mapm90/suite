@@ -301,9 +301,7 @@ const Index = () => {
         transition={{ duration: 0.6 }}
       >
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-white/70 mb-2 font-medium">
-            Built with React, TypeScript, Tailwind CSS, and Framer Motion
-          </p>
+          <p className="text-white/70 mb-2 font-medium">Built with React</p>
         </div>
       </motion.footer>
     </div>
