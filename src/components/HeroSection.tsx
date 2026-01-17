@@ -22,6 +22,7 @@ import {
   SiVsco,
   SiTsnode,
   SiNextdotjs,
+  SiJetpackcompose,
 } from "react-icons/si";
 import {} from "react-icons/si";
 
@@ -42,6 +43,11 @@ const technologies = [
   { icon: SiVercel, name: "Vercel", color: "text-vibrant-black" },
 
   { icon: SiVsco, name: "VS Code", color: "text-vibrant-blue" },
+  {
+    icon: SiJetpackcompose,
+    name: "Jetpack Compose",
+    color: "text-vibrant-green",
+  },
   {
     icon: SiAndroidstudio,
     name: "Android Studio",
