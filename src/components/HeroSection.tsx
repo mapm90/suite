@@ -123,6 +123,7 @@ const HeroSection = () => {
       initial="hidden"
       animate="visible"
     >
+      <SplashCursor />
       {/* Animated Background */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <motion.div
@@ -202,7 +203,7 @@ const HeroSection = () => {
 
       {/* Title */}
       <motion.h1
-        className="text-6xl md:text-7xl font-extrabold mb-5 bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#f7971e] bg-clip-text text-transparent drop-shadow-xl"
+        className="text-6xl text-center md:text-7xl font-extrabold mb-5 bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#f7971e] bg-clip-text text-transparent drop-shadow-xl"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.8, type: "spring" }}
@@ -251,7 +252,7 @@ const HeroSection = () => {
 
       {/* Technology Icons */}
       <motion.div
-        className=" p-5   border-t border-border pt-8 mb-10 flex flex-wrap items-center justify-center gap-4 md:gap-6"
+        className="p-5  border-border pt-8 mb-10 flex flex-wrap justify-center gap-4 md:gap-6"
         variants={containerVariants}
       >
         {technologies.map((tech, index) => (
@@ -259,24 +260,24 @@ const HeroSection = () => {
             key={tech.name}
             custom={index}
             variants={techVariants}
-            className="group relative"
+            className="group relative flex  items-center justify-center w-14 md:w-14"
             whileHover={{ scale: 1.2, y: -5 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="flex flex-col items-center gap-1">
+            <div className="flex items-center gap-1 w-14">
               <div
-                className={`rounded-xl bg-card/80 p-3 shadow-lg backdrop-blur-sm transition-all duration-300 group-hover:shadow-xl ${tech.color}`}
+                className={`rounded-xl bg-card/80 p-2 shadow-lg backdrop-blur-sm transition-all duration-300 group-hover:shadow-xl ${tech.color} flex items-center justify-center w-14 h-14 md:h-14`}
               >
-                <tech.icon className="h-6 w-6 md:h-8 md:w-8" />
+                <tech.icon className="h-14 w-14 md:h-14 md:w-14" />
               </div>
-              <span className="text-xs font-medium text-muted-foreground opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xl font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10 text-center">
                 {tech.name}
               </span>
             </div>
           </motion.div>
         ))}
       </motion.div>
-      <SplashCursor />
+
       <motion.div
         className="flex items-center justify-center gap-6"
         initial={{ opacity: 0, y: 30 }}
