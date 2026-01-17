@@ -44,8 +44,6 @@ const technologies = [
   { icon: SiGit, name: "Git", color: "text-vibrant-red" },
   { icon: SiGithub, name: "GitHub", color: "text-vibrant-black" },
   { icon: SiVercel, name: "Vercel", color: "text-vibrant-black" },
-
-  { icon: SiVsco, name: "VS Code", color: "text-vibrant-blue" },
   {
     icon: SiJetpackcompose,
     name: "Jetpack Compose",
@@ -120,7 +118,7 @@ const ageprof = calculateAge(2015, 6);
 const HeroSection = () => {
   return (
     <motion.section
-      className="relative flex min-h-screen flex-col items-center justify-center px-4 py-20"
+      className="relative flex min-h-screen flex-col items-center justify-center px-4 py-5"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -253,7 +251,7 @@ const HeroSection = () => {
 
       {/* Technology Icons */}
       <motion.div
-        className="mb-10 flex flex-wrap items-center justify-center gap-4 md:gap-6"
+        className=" p-5   border-t border-border pt-8 mb-10 flex flex-wrap items-center justify-center gap-4 md:gap-6"
         variants={containerVariants}
       >
         {technologies.map((tech, index) => (
