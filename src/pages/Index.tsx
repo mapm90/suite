@@ -20,8 +20,6 @@ import vdmm from "../medias/vdmm-services.png";
 import HeroSection from "@/components/HeroSection";
 
 const applications = [
-  // ... (igual que antes)
-
   {
     id: 1,
     name: "VDMM Services",
@@ -104,7 +102,7 @@ const applications = [
     name: "Music Player",
     description:
       "A modern music player application that allows you to search, play, and manage your favorite songs with a sleek interface and smooth performance.",
-    image: playmusic, // Reemplazar con la imagen del reproductor de música
+    image: playmusic,
     vercelUrl: "https://playamusic.vercel.app/",
     githubUrl: "https://github.com/mapm90/playmusic",
     tags: ["React", "TypeScript", "JavaScript", "Tailwind CSS"],
@@ -294,7 +292,7 @@ const Index = () => {
 
       {/* Footer */}
       <motion.footer
-        className="py-10 px-6 border-t border-white/10 bg-gradient-to-t from-[#232526]/70 via-[#1a2980]/40 to-transparent z-10 relative"
+        className="py-10 px-6  border-white/10 bg-gradient-to-t from-[#232526]/70 via-[#1a2980]/40 to-transparent z-10 relative"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -302,6 +300,12 @@ const Index = () => {
       >
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-white/70 mb-2 font-medium">Built with React</p>
+        </div>
+        <div className="border-t border-border pt-8 text-center">
+          <p className="text-muted-foreground text-sm">
+            © {new Date().getFullYear()} miguelDEV. All rights reserved.
+            Professional information technology services.
+          </p>
         </div>
       </motion.footer>
     </div>

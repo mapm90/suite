@@ -3,6 +3,7 @@ import { Code, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import perfil from "../medias/perfil.jpg";
 import SplashCursor from "./SplashCursor";
+import { Mail, Phone, MapPin, Cake } from "lucide-react";
 
 import {
   SiReact,
@@ -95,6 +96,26 @@ const techVariants = {
     },
   }),
 };
+/**
+ * Calcula la edad según año y mes de nacimiento
+ * @param birthYear Año de nacimiento
+ * @param birthMonth Mes de nacimiento (0 = enero, 11 = diciembre)
+ * @returns Edad actual
+ */
+function calculateAge(birthYear: number, birthMonth: number): number {
+  const today = new Date();
+  let age = today.getFullYear() - birthYear;
+
+  // Si aún no ha llegado el mes de cumpleaños, restamos 1
+  if (today.getMonth() < birthMonth) {
+    age--;
+  }
+
+  return age;
+}
+
+const age = calculateAge(1990, 11);
+const ageprof = calculateAge(2015, 6);
 
 const HeroSection = () => {
   return (
@@ -155,7 +176,9 @@ const HeroSection = () => {
         transition={{ delay: 0.3, duration: 0.7, type: "spring" }}
       >
         <Code className="w-5 h-5 text-[#00c6ff]" />
-        <span className="tracking-wide">Premium Full Stack Developer</span>
+        <span className="tracking-wide">
+          Premium Full Stack Developer + {ageprof} years of experience in IT
+        </span>
       </motion.div>
 
       {/* Animated Photo */}
@@ -197,6 +220,36 @@ const HeroSection = () => {
         Discover a suite of modern, high-end web and Android applications
         crafted with precision, innovation, and a passion for technology.
       </motion.p>
+
+      {/* Personal Info */}
+      <motion.div
+        variants={itemVariants}
+        className="mb-10 flex flex-wrap justify-center gap-4 text-sm md:text-base"
+      >
+        <div className="flex items-center gap-2 rounded-full bg-white/10 px-5 py-2 backdrop-blur-md border border-white/10">
+          <Mail className="h-4 w-4 text-[#00c6ff]" />
+          <span className="text-white">
+            <a href="mailto:mpmorales05@gmail.com">mpmorales05@gmail.com</a>
+          </span>
+        </div>
+
+        <div className="flex items-center gap-2 rounded-full bg-white/10 px-5 py-2 backdrop-blur-md border border-white/10">
+          <Phone className="h-4 w-4 text-[#f7971e]" />
+          <span className="text-white">
+            <a href="tel:+34600000000">+34 314479919</a>
+          </span>
+        </div>
+
+        <div className="flex items-center gap-2 rounded-full bg-white/10 px-5 py-2 backdrop-blur-md border border-white/10">
+          <Cake className="h-4 w-4 text-[#ff5edf]" />
+          <span className="text-white">{age} años</span>
+        </div>
+
+        <div className="flex items-center gap-2 rounded-full bg-white/10 px-5 py-2 backdrop-blur-md border border-white/10">
+          <MapPin className="h-4 w-4 text-[#00ff99]" />
+          <span className="text-white">España</span>
+        </div>
+      </motion.div>
 
       {/* Technology Icons */}
       <motion.div
