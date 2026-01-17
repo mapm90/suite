@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Github, ExternalLink, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 import {
   Card,
   CardContent,
@@ -16,6 +17,7 @@ import previewcalculadoraIMC from "../medias/previw calculadora IMC.png";
 import unidos from "../medias/unidos.png";
 import playmusic from "../medias/playmusic.png";
 import vdmm from "../medias/vdmm-services.png";
+import HeroSection from "@/components/HeroSection";
 
 const applications = [
   // ... (igual que antes)
@@ -141,65 +143,10 @@ const Index = () => {
       </div>
 
       {/* Hero Section */}
-      <motion.section
-        className="relative py-20 px-6 text-center flex flex-col items-center justify-center min-h-[55vh] overflow-hidden z-10"
-        initial={{ opacity: 0, y: -40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <motion.div
-          className="inline-flex items-center gap-3 px-6 py-3 bg-white/20 border border-white/20 rounded-full text-base text-white font-semibold shadow-lg backdrop-blur-lg mb-7"
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.7, type: "spring" }}
-        >
-          <Code className="w-5 h-5 text-[#00c6ff]" />
-          <span className="tracking-wide">Premium Full Stack Developer</span>
-        </motion.div>
-
-        <motion.h1
-          className="text-6xl md:text-7xl font-extrabold mb-5 bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#f7971e] bg-clip-text text-transparent drop-shadow-xl"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.8, type: "spring" }}
-        >
-          Elevate Your Experience
-        </motion.h1>
-
-        <motion.p
-          className="text-2xl md:text-3xl text-white/90 mb-8 max-w-2xl mx-auto font-light drop-shadow"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.8, type: "spring" }}
-        >
-          Discover a suite of modern, high-end web and android applications
-          crafted with precision, innovation, and a passion for technology.
-        </motion.p>
-
-        <motion.div
-          className="flex items-center justify-center gap-6"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.8, type: "spring" }}
-        >
-          <a
-            href="https://github.com/mapm90/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button
-              size="lg"
-              className="gap-2 bg-gradient-to-r from-[#00c6ff] to-[#f7971e] text-white font-semibold shadow-xl hover:from-[#0072ff] hover:to-[#ffd200] transition-all duration-300 border-0"
-            >
-              <Github className="w-5 h-5" />
-              GitHub Profile
-            </Button>
-          </a>
-        </motion.div>
-      </motion.section>
+      <HeroSection />
 
       {/* Menor espacio entre hero y grid */}
-      <section className="py-4 px-6 z-10 relative">
+      <section className="pt-0 px-1 z-10 relative">
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-10"
