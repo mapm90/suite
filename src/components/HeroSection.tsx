@@ -20,6 +20,8 @@ import {
   SiVercel,
   SiAndroid,
   SiVsco,
+  SiTsnode,
+  SiNextdotjs,
 } from "react-icons/si";
 import {} from "react-icons/si";
 
@@ -46,6 +48,8 @@ const technologies = [
     color: "text-vibrant-green",
   },
   { icon: SiAndroid, name: "Android", color: "text-vibrant-green" },
+  { icon: SiTsnode, name: "TS Node", color: "text-vibrant-green" },
+  { icon: SiNextdotjs, name: "Next.js", color: "text-vibrant-black" },
 ];
 
 const containerVariants = {
