@@ -1,7 +1,7 @@
 import { motion, type Easing } from "framer-motion";
 import { Code, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import perfil from "../medias/perfil.jpg";
+import perfil from "../medias/perfil.avif";
 import SplashCursor from "./SplashCursor";
 import { Mail, Phone, MapPin, Cake } from "lucide-react";
 
@@ -22,10 +22,10 @@ import {
   SiGithub,
   SiVercel,
   SiAndroid,
-  SiVsco,
   SiTsnode,
   SiNextdotjs,
   SiJetpackcompose,
+  SiFramer,
 } from "react-icons/si";
 import {} from "react-icons/si";
 const circleId = "circlePath-profile";
@@ -58,6 +58,7 @@ const technologies = [
   { icon: SiAndroid, name: "Android", color: "text-vibrant-green" },
   { icon: SiTsnode, name: "TS Node", color: "text-vibrant-green" },
   { icon: SiNextdotjs, name: "Next.js", color: "text-vibrant-black" },
+  { icon: SiFramer, name: "Framer Motion", color: "text-vibrant-purple" },
 ];
 
 const containerVariants = {
