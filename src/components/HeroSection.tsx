@@ -28,6 +28,7 @@ import {
   SiJetpackcompose,
 } from "react-icons/si";
 import {} from "react-icons/si";
+const circleId = "circlePath-profile";
 
 const technologies = [
   { icon: SiReact, name: "React", color: "text-vibrant-cyan" },
@@ -180,16 +181,19 @@ const HeroSection = () => {
         </span>
       </motion.div>
 
-      {/* Animated Photo */}
       <motion.div variants={itemVariants} className="relative mb-8">
         {/* Glow effect behind photo */}
+        <div className="absolute top-3 right-3 z-30 rounded-full bg-background/60 px-3 py-1 text-xs font-semibold backdrop-blur pointer-events-none">
+          migueDEV
+        </div>
+
         <div className="glow-border animate-glow-rotate absolute -inset-1 rounded-full opacity-75 blur-sm" />
         <div className="glow-border animate-glow-rotate absolute -inset-2 rounded-full opacity-50 blur-md" />
         <div className="glow-border animate-glow-rotate absolute -inset-3 rounded-full opacity-30 blur-lg" />
 
         {/* Photo container */}
         <motion.div
-          className="animate-pulse-glow relative h-40 w-40 overflow-hidden rounded-full border-4 border-background md:h-52 md:w-52"
+          className="animate-pulse-glow relative z-10 h-40 w-40 overflow-hidden rounded-full border-4 border-background md:h-52 md:w-52 mx-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
         >
