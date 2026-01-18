@@ -192,7 +192,7 @@ const HeroSection = () => {
         {/* Avatar con borde sutil */}
         <motion.div
           className="relative z-10 h-40 w-40 md:h-52 md:w-52 overflow-hidden rounded-full border-4 border-white/30 bg-background"
-          whileHover={{ scale: 1.08 }}
+          whileHover={{ scale: 2.0 }}
           transition={{ type: "spring", stiffness: 230, damping: 16 }}
         >
           <img
@@ -224,7 +224,7 @@ const HeroSection = () => {
         className="text-6xl text-center -mt-10 md:text-7xl font-extrabold mb-5 bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#f7971e] bg-clip-text text-transparent drop-shadow-xl"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ type: "tween", duration: 0.8, ease: "easeInOut" }}
+        transition={{ type: "spring", duration: 0.8, ease: "easeInOut" }}
         whileHover={{ y: -2, scale: 1.02 }}
       >
         Elevate Your Experience
