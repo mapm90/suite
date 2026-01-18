@@ -191,7 +191,7 @@ const HeroSection = () => {
 
         {/* Avatar con borde sutil */}
         <motion.div
-          className="relative z-10 h-62 w-62 md:h-52 md:w-52 overflow-hidden rounded-full border-4 border-white/30 bg-background"
+          className="relative z-10 h-62 w-62 md:h-62 md:w-62 overflow-hidden rounded-full border-4 border-white/30 bg-background"
           whileHover={{ scale: 1.08 }}
           transition={{ type: "spring", stiffness: 230, damping: 16 }}
         >
