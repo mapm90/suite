@@ -181,36 +181,51 @@ const HeroSection = () => {
         </span>
       </motion.div>
 
-      <motion.div variants={itemVariants} className="relative mb-8">
-        {/* Glow effect behind photo */}
-        <div className="absolute top-3 right-3 z-30 rounded-full bg-background/60 px-3 py-1 text-xs font-semibold backdrop-blur pointer-events-none">
-          migueDEV
-        </div>
+      <motion.div
+        variants={itemVariants}
+        className="relative mb-12 group flex flex-col items-center "
+      >
+        {/* Glow de colores dinámico */}
+        <div className="absolute -inset-2 rounded-full opacity-60 blur-3xl bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 animate-glow-rotate"></div>
+        <div className="absolute -inset-3 rounded-full opacity-30 blur-2xl bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 animate-glow-rotate animation-delay-2000"></div>
 
-        <div className="glow-border animate-glow-rotate absolute -inset-1 rounded-full opacity-75 blur-sm" />
-        <div className="glow-border animate-glow-rotate absolute -inset-2 rounded-full opacity-50 blur-md" />
-        <div className="glow-border animate-glow-rotate absolute -inset-3 rounded-full opacity-30 blur-lg" />
-
-        {/* Photo container */}
+        {/* Avatar con borde sutil */}
         <motion.div
-          className="animate-pulse-glow relative z-10 h-40 w-40 overflow-hidden rounded-full border-4 border-background md:h-52 md:w-52 mx-auto"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
+          className="relative z-10 h-40 w-40 md:h-52 md:w-52 overflow-hidden rounded-full border-4 border-white/30 bg-background"
+          whileHover={{ scale: 1.08 }}
+          transition={{ type: "spring", stiffness: 230, damping: 16 }}
         >
           <img
             src={perfil}
-            alt="Developer Profile"
+            alt="Miguel Pérez"
             className="h-full w-full object-cover"
           />
+        </motion.div>
+
+        {/* Badge pequeño de firma */}
+        <motion.div
+          className="
+    absolute top-3 right-3 z-30
+    rounded-full
+    bg-black/50
+    px-1 py-1
+    text-xs font-semibold
+    pointer-events-none
+    text-white
+    shadow-[0_0_8px_rgba(255,255,255,0.5)]   /* halo brillante */
+  "
+        >
+          migueDEV
         </motion.div>
       </motion.div>
 
       {/* Title */}
       <motion.h1
-        className="text-6xl text-center md:text-7xl font-extrabold mb-5 bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#f7971e] bg-clip-text text-transparent drop-shadow-xl"
+        className="text-6xl text-center -mt-10 md:text-7xl font-extrabold mb-5 bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#f7971e] bg-clip-text text-transparent drop-shadow-xl"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, duration: 0.8, type: "spring" }}
+        transition={{ type: "tween", duration: 0.8, ease: "easeInOut" }}
+        whileHover={{ y: -2, scale: 1.02 }}
       >
         Elevate Your Experience
       </motion.h1>
