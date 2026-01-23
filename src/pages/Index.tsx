@@ -303,7 +303,7 @@ const Index = () => {
         </div>
         <div className="border-t border-border pt-8 text-center">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} miguelDEV. All rights reserved.
+            © {new Date().getFullYear()} migueDEV. All rights reserved.
             Professional information technology services.
           </p>
         </div>
