@@ -28,7 +28,6 @@ import {
   SiFramer,
 } from "react-icons/si";
 import {} from "react-icons/si";
-const circleId = "circlePath-profile";
 
 const technologies = [
   { icon: SiReact, name: "React", color: "text-vibrant-cyan" },
@@ -277,8 +276,14 @@ const HeroSection = () => {
 
       {/* Technology Icons */}
       <motion.div
-        className="p-5  border-border pt-8 mb-10 flex flex-wrap justify-center gap-4 md:gap-6"
+        className="p-5 border-border pt-8 mb-10 flex flex-wrap justify-center gap-4 md:gap-6"
         variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{
+          once: true,
+          amount: 0.4,
+        }}
       >
         {technologies.map((tech, index) => (
           <motion.div
